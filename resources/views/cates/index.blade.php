@@ -3,7 +3,7 @@
 @section('content')
 
 <div style="width:700px;">
-    <h3>Create a new cate</h3>
+    <h3>List category</h3>
     
     <div class="pull-right">
         <a class="btn btn-success" href="{{route('cates.create')}}">Create a new cate</a>
