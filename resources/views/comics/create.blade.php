@@ -30,7 +30,7 @@
             <input type="text" class="form-control" name="name" placeholder="name">
         </div>
         <div class="form-group">
-            <label>The loai</label>
+            <label>Category</label>
             <select name="cate_id" id="cate_id" class="form-control">
                 @foreach ($cates as $cate)
                     <option value="{{$cate->id}}">{{$cate->name}}</option>

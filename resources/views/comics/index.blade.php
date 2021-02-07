@@ -33,7 +33,7 @@
             @endforeach
             <td>
                 <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
-                    <a class="btn btn-info" href="{{route('comics.show', $comic->id)}}">SHOW</a>
+                    <!-- <a class="btn btn-info" href="{{route('comics.show', $comic->id)}}">SHOW</a> -->
                     <a class="btn btn-primary" href="{{route('comics.edit', $comic->id)}}">EDIT</a>
                     @csrf
                     @method('DELETE')

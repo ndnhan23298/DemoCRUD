@@ -19,7 +19,7 @@
 
     <table class="table table-bordered">
     <tr>
-        <th style="width:400px">The loai</th>
+        <th style="width:400px">Category</th>
         <th>Action</th>
     </tr>
     @foreach ($cates as $cate)

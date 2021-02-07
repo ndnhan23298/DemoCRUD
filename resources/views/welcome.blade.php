@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="row">
-                   <h4>TRANG CHU</h4>
+                   <h4>HOME</h4>
                 </div>
                 <div class="row">
                     <a href="{{route('cates.index')}}">Category</a>
