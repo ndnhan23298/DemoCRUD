@@ -2,14 +2,14 @@
 
 @section('content')
 
-<div style="width:700px;">
+<div class="content">
     <h3>List comic</h3>
     
     <div class="pull-right">
         <a class="btn btn-success" href="{{route('comics.create')}}">Create a new comic</a>
     </div>
 
-    <div style="width: 300px">
+    <div class="message">
         @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 <p>{{$message}}</p>

@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div style="width: 700px;">
+<div class="content">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
@@ -15,7 +15,7 @@
     </div>
     @if ($errors->any())
         <div class="alert alert-danger">
-            <strong>Whoops</strong>
+            <strong>Whoops!!</strong>
             <ul>
                 @foreach ($errors->all() as $error)
                     <li>{{$error}}</li>

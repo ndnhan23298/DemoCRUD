@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div style="width: 700px;">
+<div class="content">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">

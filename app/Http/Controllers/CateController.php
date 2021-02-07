@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cate;
+use Illuminate\Validation\Rule;
 use Illuminate\Http\Request;
 
 class CateController extends Controller
@@ -43,7 +44,10 @@ class CateController extends Controller
     public function update(Request $request, Cate $cate)
     {
         $request->validate([
-            'name' => 'required|unique:cates',
+            'name' => [
+                'required',
+                Rule::unique('cates')->ignore($cate->id),
+            ],
         ]);
 
         $cate->update($request->all());
