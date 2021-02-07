@@ -13,7 +13,7 @@ class Comic extends Model
         'name', 'cate_id',
     ];
 
-    // public function cateComic(){
-    //     return $this->belongsTo('App\Cate', 'cate_id', 'id');
-    // }
+    public function cate(){
+        return $this->belongsTo('App\Cate', 'cate_id', 'id');
+    }
 }
